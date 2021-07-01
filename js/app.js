@@ -1,4 +1,16 @@
-const numberOfFilms = +prompt('сколько фильмов ?','');
+'use strict';
+
+let numberOfFilms;
+
+function start() {
+    numberOfFilms = +prompt('сколько фильмов ?','');
+
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt('сколько фильмов ?','');
+    }
+}
+
+start();
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -7,6 +19,10 @@ const personalMovieDB = {
     ganres: [],
     private: false
 };
+
+for (let i = 0; i < 2; i++) {
+    const a = prompt('один із переглянутих фільмів?');
+}
 
 const a = prompt('один із переглянутих фільмів?',''),
       b = prompt('на скільки ви його оціните?',''),
