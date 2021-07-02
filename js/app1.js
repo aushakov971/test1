@@ -4,7 +4,7 @@ function first() {
     //do something
     setTimeout(function(){
         console.log(1);
-    }, 500);
+    }, 800);
 }
 
 function second() {
