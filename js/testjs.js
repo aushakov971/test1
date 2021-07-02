@@ -7,10 +7,18 @@ const options = {
     colors: {
         border: 'balck',
         bg: 'red'
+    },
+    makeTest: function () {
+        console.log("Test");
     }
 };
 
-console.log(Object.keys(options).length);
+options.makeTest()
+
+const {border, bg} = options.colors;
+console.log(border);
+
+// console.log(Object.keys(options).length);
 
 // console.log(options["colors"]["border"]);
 
